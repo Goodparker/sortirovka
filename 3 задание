@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cctype> // Для функции isalpha
+
+int main() {
+    char input;
+
+    std::cout << "Введите символ: ";
+    std::cin >> input;
+
+    // Проверяем, является ли символ буквой
+    if (std::isalpha(input)) {
+        std::cout << "Ошибка: введена буква." << std::endl;
+    } else {
+        std::cout << "Введён не буквенный символ." << std::endl;
+    }
+
+    return 0;
+}
